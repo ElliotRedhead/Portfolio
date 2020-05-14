@@ -7,3 +7,4 @@ Visit the [live deployment.](elliotredhead.com)
 
 This project is my introduction to React and Redux.  
 The primary function is to provide a professional showcase of my programming projects, detailing new technologies/approaches used for each and document my progression as a web developer.  
+New understandings/progression/common bugfixes are also documented in [developer notes](./DevNotes.md).
