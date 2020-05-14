@@ -9,12 +9,12 @@ const homePage = () => (
         <Link to="404" className="">
         Learn More
         </Link>
-		<Link to="NHLTeamShowdown">
+        <Link to="NHLTeamShowdown">
 			NHL Link
-		</Link>
-		<NHLTeamShowdown>
-			</NHLTeamShowdown>
-        </div>
-)
+        </Link>
+        <NHLTeamShowdown>
+        </NHLTeamShowdown>
+    </div>
+);
 
 export default homePage;
