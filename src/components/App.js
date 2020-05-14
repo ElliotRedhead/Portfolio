@@ -3,14 +3,16 @@ import { Route, Switch } from "react-router-dom";
 import homePage from "./pages/Homepage";
 import pageNotFound404 from "./pages/PageNotFound404";
 import NHLTeamShowdown from "./modals/NHLTeamShowdown";
+import UnderConstruction from "./pages/UnderConstruction";
 
 const App = () =>
-		<div>
-			<Switch>
-				<Route exact path={["/", "/home", "/ReactPortfolio"]} component={homePage} />
-				<Route path={["/NHLTeamShowdown"]} component={NHLTeamShowdown} />
-				<Route component={pageNotFound404} />
-			</Switch>
-		</div>
+    <div>
+        <Switch>
+            <Route exact path={["/"]} component={UnderConstruction} />
+            <Route exact path={["/home"]} component={homePage} />
+            <Route path={["/NHLTeamShowdown"]} component={NHLTeamShowdown} />
+            <Route component={pageNotFound404} />
+        </Switch>
+    </div>;
 
 export default App;
