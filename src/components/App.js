@@ -8,7 +8,7 @@ import UnderConstruction from "./pages/UnderConstruction";
 const App = () =>
     <div>
         <Switch>
-            <Route exact path={["/"]} component={UnderConstruction} />
+            <Route exact path={["/","/ReactPortfolio"]} component={UnderConstruction} />
             <Route exact path={["/home"]} component={homePage} />
             <Route path={["/NHLTeamShowdown"]} component={NHLTeamShowdown} />
             <Route component={pageNotFound404} />
