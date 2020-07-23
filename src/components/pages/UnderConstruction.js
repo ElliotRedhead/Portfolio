@@ -1,10 +1,9 @@
 import React from "react";
 import ReactGA from "react-ga";
 
-
 const UnderConstruction = () => {
   ReactGA.initialize("G-2SBBFGDL16");
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  ReactGA.pageview("/underconstruction");
   return (
     <div>
       <h1>This portfolio site is currently under construction.</h1>
