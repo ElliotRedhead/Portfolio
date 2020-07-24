@@ -2,7 +2,7 @@ import React from "react";
 import ReactGA from "react-ga";
 
 const UnderConstruction = () => {
-  ReactGA.initialize("G-2SBBFGDL16");
+  ReactGA.initialize("UA-173420270-1");
   ReactGA.pageview("/underconstruction");
   return (
     <div>
