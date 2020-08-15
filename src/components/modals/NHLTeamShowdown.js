@@ -3,26 +3,21 @@ import React, { useState } from "react";
 
 /**
  * React Hooks are used to toggle visibility of this element, a conditional ternary operator determines what visibility to pass based on the current state.
+ * @returns {object} 
  */
-const NHLTeamShowdown = () => {
-  const [modalVisibility, invertVisibility] = useState("visible");
-
-  const inversionHandler = () => {
-    let invertedState = (modalVisibility === "invisible") ? "visible" : "invisible";
-    return invertedState;
-  };
+const ProjectPreviewContainer = () => {
+  const [containerVisibility, switchComponentVisibility] = useState("hidden");
 
   return (
-    <div>
-      <p className={modalVisibility}>This line toggles visibility with the button activation.</p>
-      <button onClick={
-        () => {
-          invertVisibility(inversionHandler());
-        }}>
-				Click me
+    <div
+      onMouseOver={() => {switchComponentVisibility("visible");}}
+      onMouseOut={() => {switchComponentVisibility("hidden");}}>
+      <button
+        style={{visibility:`${containerVisibility}`}}>
+				Only visible on parent element hover.
       </button>
     </div>
   );
 };
 
-export default NHLTeamShowdown;
+export default ProjectPreviewContainer;
