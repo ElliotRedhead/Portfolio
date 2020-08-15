@@ -42,6 +42,7 @@
     },
     "devDependencies": {
         "eslint-plugin-react": "^7.20.3",
+        "eslint-plugin-react-hooks": "^4.0.8",
         "gh-pages": "^2.2.0",
         "typescript": "^3.9.7",
         "yargs-parser": "^18.1.3"
