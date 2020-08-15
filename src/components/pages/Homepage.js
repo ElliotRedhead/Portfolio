@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NHLTeamShowdown from "../modals/NHLTeamShowdown";
 
-const homePage = () => (
+const Homepage = () => (
   <div className="jumbotron">
     <h1>Elliot Redhead | Web Developer</h1>
     <p></p>
@@ -17,4 +17,4 @@ const homePage = () => (
   </div>
 );
 
-export default homePage;
+export default Homepage;
