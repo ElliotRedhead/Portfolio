@@ -8,7 +8,7 @@ const App = () => (
   <div>
     <Switch>
       <Route exact path={["/","/ReactPortfolio/"]} component={UnderConstruction} />
-      <Route exact path={"/home"} component={Homepage} />
+      <Route path={"/home"} component={Homepage} />
       <Route component={pageNotFound404} />
     </Switch>
   </div>
