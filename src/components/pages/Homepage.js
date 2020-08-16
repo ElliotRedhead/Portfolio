@@ -1,20 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NHLTeamShowdown from "../modals/NHLTeamShowdown";
+import ProjectPreviewContainer from "../modals/ProjectPreviewContainer";
+import "../../styles/global.css";
+import useTypewriter from "react-typewriter-hook";
 
-const Homepage = () => (
-  <div className="jumbotron">
-    <h1>Elliot Redhead | Web Developer</h1>
-    <p></p>
-    <Link to="404" className="">
+const Homepage = () => {
+
+  const headingText = useTypewriter("Elliot Redhead | Web Developer");
+
+  return (
+    <div className="container-fluid">
+      <div className="row">
+        <div className="jumbotron col-12">
+          <h1 className="cursor" id="titleHeading">{headingText}</h1>
+          <p></p>
+          <Link to="404" className="">
         Learn More
-    </Link>
-    <Link to="NHLTeamShowdown">
-			NHL Link
-    </Link>
-    <NHLTeamShowdown>
-    </NHLTeamShowdown>
-  </div>
-);
+          </Link>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <ProjectPreviewContainer/>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Homepage;
