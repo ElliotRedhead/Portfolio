@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from "./components/App";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-render(<Router>
+render(<Router basename={process.env.PUBLIC_URL}>
   <App />
 </Router>,
 document.getElementById("app")
