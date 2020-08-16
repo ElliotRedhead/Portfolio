@@ -17,7 +17,7 @@ const Homepage = () => {
   const titleCursorBlink = () => {
     setInterval(() => {
       const cursorTitle = "Elliot Redhead | Web Developer_";
-      titleHeading.current.innerHTML == noCursorTitle ?
+      titleHeading.current.innerHTML === noCursorTitle ?
         titleHeading.current.innerHTML = cursorTitle :
         titleHeading.current.innerHTML = noCursorTitle;
     }, 800);
