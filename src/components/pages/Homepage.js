@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import { Link } from "react-router-dom";
 import ProjectPreviewContainer from "../modals/ProjectPreviewContainer";
 import "../../styles/global.css";
@@ -6,21 +6,26 @@ import useTypewriter from "react-typewriter-hook";
 
 const Homepage = () => {
 
+  const noCursorTitle = "Elliot Redhead | Web Developer";
+  let headingText = useTypewriter("Elliot Redhead | Web Developer");
 
-  const headingText = useTypewriter("Elliot Redhead | Web Developer");
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     console.log("This will run every second!");
-  //   }, 1000);
-  //   return () => clearInterval(interval);
-  // }, [loading]);
 
-  const headingTitle = useRef(null);
+
+  const titleHeading = useRef(null);
+
+  const titleCursorBlink = () => {
+    setInterval(() => {
+      const cursorTitle = "Elliot Redhead | Web Developer_";
+      titleHeading.current.innerHTML == noCursorTitle ?
+        titleHeading.current.innerHTML = cursorTitle :
+        titleHeading.current.innerHTML = noCursorTitle;
+    }, 800);
+  };
 
   useEffect(() => {
-    if(headingTitle.current.innerHTML === "Elliot Redhead | Web Developer"){
-      console.log("rendering is complete");
+    if(titleHeading.current.innerHTML === noCursorTitle){
+      titleCursorBlink();
     }
   });
 
@@ -28,7 +33,7 @@ const Homepage = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="jumbotron col-12">
-          <h1 className="cursor" id="titleHeading" ref={headingTitle}>{headingText}</h1>
+          <h1 id="titleHeading" ref={titleHeading}>{headingText}</h1>
           <p></p>
           <Link to="404" className="">
         Learn More
