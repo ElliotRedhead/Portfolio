@@ -3,28 +3,30 @@ import { Link } from "react-router-dom";
 import ProjectPreviewContainer from "../modals/ProjectPreviewContainer";
 import "../../styles/global.css";
 import useTypewriter from "react-typewriter-hook";
+import { useState } from "react";
 
 const Homepage = () => {
 
-  const noCursorTitle = "Elliot Redhead | Web Developer";
-  let headingText = useTypewriter("Elliot Redhead | Web Developer");
+  const titleText = "Elliot Redhead | Web Developer";
+  const headingText = useTypewriter(titleText);
 
+  const [cursorDisplay, setCursorDisplay] = useState("");
 
-
-
+  let blinkPreviouslyFired = false;
   const titleHeading = useRef(null);
+  // const titleHeading = useRef(blinkPreviouslyFired);
 
   const titleCursorBlink = () => {
     setInterval(() => {
-      const cursorTitle = "Elliot Redhead | Web Developer_";
-      titleHeading.current.innerHTML === noCursorTitle ?
-        titleHeading.current.innerHTML = cursorTitle :
-        titleHeading.current.innerHTML = noCursorTitle;
-    }, 800);
+      console.log("Blink fired");
+      cursorDisplay === "" ? setCursorDisplay("_") : setCursorDisplay("");
+    }, 500);
   };
 
+
   useEffect(() => {
-    if(titleHeading.current.innerHTML === noCursorTitle){
+    if(titleHeading.current.innerHTML.startsWith(titleText) && !blinkPreviouslyFired){
+      // blinkPreviouslyFired = true;
       titleCursorBlink();
     }
   });
@@ -32,9 +34,8 @@ const Homepage = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="jumbotron col-12">
-          <h1 id="titleHeading" ref={titleHeading}>{headingText}</h1>
-          <p></p>
+        <div className="jumbotron col-12 mx-auto text-center">
+          <h1 id="titleHeading" ref={titleHeading}>{headingText}<span>{cursorDisplay}</span></h1>
           <Link to="404" className="">
         Learn More
           </Link>
