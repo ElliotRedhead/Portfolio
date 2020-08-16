@@ -3,3 +3,7 @@
 #titleHeading {
   font-family: "Fira Code", monospace;
 }
+
+#titleCursor {
+  position: absolute;
+}
