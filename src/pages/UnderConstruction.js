@@ -1,6 +1,6 @@
 import React from "react";
 import ReactGA from "react-ga";
-import HiddenLink from "../HiddenLink";
+import HiddenLink from "../components/HiddenLink";
 
 const UnderConstruction = () => {
   ReactGA.initialize("UA-173420270-1");
