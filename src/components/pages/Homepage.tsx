@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import ProjectPreviewContainer from "../modals/ProjectPreviewContainer";
-import "../../styles/global.css";
+import "../../styles/global.scss";
 import useTypewriter from "react-typewriter-hook";
 import { useState } from "react";
 
