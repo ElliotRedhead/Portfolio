@@ -1,6 +1,4 @@
 import React, { useLayoutEffect, useRef } from "react";
-import { Link } from "react-router-dom";
-import ProjectPreviewContainer from "../components/ProjectPreviewContainer";
 import "../styles/global.scss";
 import useTypewriter from "react-typewriter-hook";
 import { useState } from "react";
@@ -26,19 +24,11 @@ const Homepage = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="jumbotron col-12">
+        <div className="jumbotron-fluid col-10 offset-1 col-md-12 offset-md-0 d-flex justify-content-center align-items-center">
           <h1 id="titleHeading" ref={titleHeading} className="text-center">
             {headingText}
             <span id="titleCursor">{cursorDisplay}</span>
           </h1>
-          <Link to="404" className="">
-            Learn More
-          </Link>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-12">
-          <ProjectPreviewContainer />
         </div>
       </div>
     </div>

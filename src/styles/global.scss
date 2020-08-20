@@ -2,9 +2,12 @@
 
 $code-font: "Fira Code", monospace;
 
+.jumbotron-fluid {
+  height: 100vh;
+}
+
 #titleHeading {
   font-family: $code-font;
-  height: 100vh;
 }
 
 #titleCursor {
