@@ -14,7 +14,7 @@ $code-font: "Fira Code", monospace;
 
 #subHeading {
   font-family: $code-font;
-  font-size: 2rem !important;
+  font-size: 2.8rem;
 }
 
 #titleCursor {
@@ -31,5 +31,5 @@ $code-font: "Fira Code", monospace;
 }
 
 .fadeIn {
-  animation: fade-in 1s;
+  animation: fade-in 4s;
 }
