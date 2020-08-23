@@ -8,7 +8,7 @@ const Homepage = () => {
   const titleText = "Elliot Redhead";
   const animatedHeading = useTypewriter(titleText);
 
-  const [cursorDisplay, setCursorDisplay] = useState("");
+  const [cursorDisplay, setCursorDisplay] = useState("_");
 
   const titleReference = useRef<HTMLDivElement>(null);
   let additionalSubtitleClasses = useRef("invisible");
