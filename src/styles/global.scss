@@ -2,14 +2,34 @@
 
 $code-font: "Fira Code", monospace;
 
-.jumbotron-fluid {
+.jumbotron {
   height: 100vh;
+  margin: 0 !important;
 }
 
 #titleHeading {
+  font-size: 3.5rem;
   font-family: $code-font;
+}
+
+#subHeading {
+  font-family: $code-font;
+  font-size: 2rem !important;
 }
 
 #titleCursor {
   position: absolute;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fade-in 1s;
 }
