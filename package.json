@@ -31,7 +31,7 @@
         "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build && cp build/index.html build/404.html",
-        "test": "CI=true react-scripts test --env=jsdom",
+        "test": "CI=true react-scripts test --env=jsdom --passWithNoTests",
         "test:coverage": "npm test -- --coverage",
         "eject": "react-scripts eject"
     },
