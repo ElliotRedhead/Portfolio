@@ -11,14 +11,12 @@ const Jumbotron = () => {
 
   const titleReference = useRef<HTMLDivElement>(null);
   let additionalSubtitleClasses = useRef("invisible");
-  let additionalContainerClasses = useRef("");
 
   useLayoutEffect(() => {
     const titleNode = titleReference.current;
     additionalSubtitleClasses.current = "invisible";
     if (titleNode && titleNode.innerHTML.startsWith(titleText)) {
       additionalSubtitleClasses.current = "fadeIn";
-      additionalContainerClasses.current = "translateHeader";
       const interval = setInterval(() => {
         cursorDisplay === "" ? setCursorDisplay("_") : setCursorDisplay("");
       }, 700);
@@ -28,7 +26,7 @@ const Jumbotron = () => {
 
   return (
     <div className="jumbotron d-flex align-items-center">
-      <div className={`container-fluid ${additionalContainerClasses.current}`}>
+      <div className="container-fluid">
         <div className="row">
           <div className="col-12">
             <h1

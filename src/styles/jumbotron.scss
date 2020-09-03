@@ -3,6 +3,7 @@
 $code-font: "Fira Code", monospace;
 
 .jumbotron {
+  animation: 2.5s translate 5s forwards;
   height: 100vh;
   margin: 0 !important;
 }
@@ -36,13 +37,13 @@ $code-font: "Fira Code", monospace;
 
 @keyframes translate {
   0% {
+    height: 100vh;
   }
-  100% {
-    transform: translateY(-40vh);
+  40% {
     font-size: 11.5px;
   }
-}
-
-.translateHeader {
-  animation: 2.5s translate 3.1s forwards;
+  100% {
+    height: 20vh;
+    font-size: 11.5px;
+  }
 }
