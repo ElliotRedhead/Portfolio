@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import "./../styles/jumbotron.scss";
 import useTypewriter from "react-typewriter-hook";
 import { useState } from "react";
+import { scrollToSection } from "../pages/Homepage";
 
 const Jumbotron = () => {
   const titleText = "Elliot Redhead";
@@ -33,6 +34,7 @@ const Jumbotron = () => {
     }
   }, [animatedHeading, cursorDisplay]);
 
+
   return (
     <div className="jumbotron d-flex align-items-center">
       <div className="container-fluid">
@@ -60,7 +62,9 @@ const Jumbotron = () => {
         </div>
         <div className="row mt-4">
           <div className="col-12 text-center">
-            <button className={`btn-light ${additionalButtonClasses.current}`}>
+            <button className={`btn-light ${additionalButtonClasses.current}`}
+              onClick={() => scrollToSection("projects")}
+            >
               Projects
             </button>
           </div>
