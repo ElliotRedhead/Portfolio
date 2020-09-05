@@ -10,13 +10,22 @@ const Jumbotron = () => {
   const [cursorDisplay, setCursorDisplay] = useState("_");
 
   const titleReference = useRef<HTMLDivElement>(null);
-  let additionalSubtitleClasses = useRef("invisible");
+  let additionalSubheadingClasses = useRef("invisible");
+  let additionalButtonClasses = useRef("");
 
   useLayoutEffect(() => {
     const titleNode = titleReference.current;
-    additionalSubtitleClasses.current = "invisible";
+    additionalSubheadingClasses.current = "invisible";
+    additionalButtonClasses.current = "invisible";
+
     if (titleNode && titleNode.innerHTML.startsWith(titleText)) {
-      additionalSubtitleClasses.current = "fadeIn";
+      additionalSubheadingClasses.current = "subheadingFade";
+      const buttonAnimationDelay = () => {
+        additionalButtonClasses.current = "";
+      };
+      setTimeout(function () {
+        buttonAnimationDelay();
+      }, 3000);
       const interval = setInterval(() => {
         cursorDisplay === "" ? setCursorDisplay("_") : setCursorDisplay("");
       }, 700);
@@ -43,7 +52,7 @@ const Jumbotron = () => {
           <div className="col-12">
             <h2
               id="subHeading"
-              className={`text-center ${additionalSubtitleClasses.current}`}
+              className={`text-center ${additionalSubheadingClasses.current}`}
             >
               Web Developer
             </h2>
@@ -51,7 +60,9 @@ const Jumbotron = () => {
         </div>
         <div className="row mt-4">
           <div className="col-12 text-center">
-            <button className="btn-light">Projects</button>
+            <button className={`btn-light ${additionalButtonClasses.current}`}>
+              Projects
+            </button>
           </div>
         </div>
       </div>
