@@ -1,13 +1,19 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import Jumbotron from "../components/Jumbotron";
+import ProjectList from "../components/ProjectList";
+
 
 function scrollToSection(arg:string) {
-  alert(arg);
+  console.log(titleReference.current);
 }
 
 
 const Homepage = () => (
-  <Jumbotron />
+  <>
+    <Jumbotron />
+    <ProjectList />
+  </>
 );
 
 export {Homepage, scrollToSection};

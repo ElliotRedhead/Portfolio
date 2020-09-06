@@ -63,7 +63,7 @@ const Jumbotron = () => {
         <div className="row mt-4">
           <div className="col-12 text-center">
             <button className={`btn-light ${additionalButtonClasses.current}`}
-              onClick={() => scrollToSection("projects")}
+              onClick={() => scrollToSection("projectlist")}
             >
               Projects
             </button>
