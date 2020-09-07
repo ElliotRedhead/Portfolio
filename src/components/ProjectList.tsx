@@ -7,8 +7,8 @@ const ProjectList = () => {
   return (
     <div
       id="projectlist"
-      className="container-fluid">
-          ref={projectlist}
+      className="container-fluid"
+      ref={projectlist}>
       <p>test</p>
     </div>
   );
