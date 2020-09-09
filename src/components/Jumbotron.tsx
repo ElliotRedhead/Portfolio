@@ -1,8 +1,9 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useContext } from "react";
 import "./../styles/jumbotron.scss";
 import useTypewriter from "react-typewriter-hook";
 import { useState } from "react";
-import { scrollToSection } from "../pages/Homepage";
+import DisplayContext from "../contexts/DisplayContext";
+
 
 const Jumbotron = () => {
   const titleText = "Elliot Redhead";
@@ -13,6 +14,8 @@ const Jumbotron = () => {
   const titleReference = useRef<HTMLDivElement>(null);
   let additionalSubheadingClasses = useRef("invisible");
   let additionalButtonClasses = useRef("");
+
+  const context = useContext(DisplayContext);
 
   useLayoutEffect(() => {
     const titleNode = titleReference.current;
@@ -63,7 +66,7 @@ const Jumbotron = () => {
         <div className="row mt-4">
           <div className="col-12 text-center">
             <button className={`btn-light ${additionalButtonClasses.current}`}
-              onClick={() => scrollToSection(titleReference)}
+              onClick={context.toggleProjectsVisibility}
             >
               Projects
             </button>
