@@ -13,6 +13,7 @@ const App = () => {
   const toggleProjectsVisibility = () => {
     setProjectsVisibility(true);
   };
+  
   return (
     <>
       <Switch>
