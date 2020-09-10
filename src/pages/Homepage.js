@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Jumbotron from "../components/Jumbotron";
 import ProjectList from "../components/ProjectList";
 import DisplayContext from "../contexts/DisplayContext";
