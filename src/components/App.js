@@ -9,7 +9,6 @@ import DisplayContext from "../contexts/DisplayContext.tsx";
 
 const App = () => {
   const [projectsVisibility, setProjectsVisibility] = useState(false);
-
   const toggleProjectsVisibility = () => {
     setProjectsVisibility(true);
   };

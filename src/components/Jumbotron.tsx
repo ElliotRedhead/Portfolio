@@ -17,6 +17,13 @@ const Jumbotron = () => {
 
   const context = useContext(DisplayContext);
 
+  const projectsClickHandler = () => {
+    context.toggleProjectsVisibility();
+    setTimeout(function(){
+      window.scrollTo({ top:window.innerHeight, behavior:"smooth" });},
+    200);
+  };
+
   useLayoutEffect(() => {
     const titleNode = titleReference.current;
     additionalSubheadingClasses.current = "invisible";
@@ -66,7 +73,7 @@ const Jumbotron = () => {
         <div className="row mt-4">
           <div className="col-12 text-center">
             <button className={`btn-light ${additionalButtonClasses.current}`}
-              onClick={context.toggleProjectsVisibility}
+              onClick={projectsClickHandler}
             >
               Projects
             </button>
