@@ -1,5 +1,6 @@
-const projectDetails = [
+const projectData = [
   {
+    id: 1,
     name: "React Portfolio",
     shortDesc: "An interactive project showcase.",
     fullDesc: "",
@@ -8,6 +9,7 @@ const projectDetails = [
     liveLink:"https://www.elliotredhead.com/"
   },
   {
+    id: 2,
     name: "PrintCrate",
     shortDesc: "A Django-based ecommerce site for 3D-printed models.",
     fullDesc: "",
@@ -16,6 +18,7 @@ const projectDetails = [
     liveLink:"https://printcrate.herokuapp.com/"
   },
   {
+    id: 3,
     name: "Workout Planner",
     shortDesc: "Customisable exercise planner, built with Flask.",
     fullDesc: "",
@@ -25,4 +28,4 @@ const projectDetails = [
   }
 ];
 
-export default projectDetails;
+export default projectData;
