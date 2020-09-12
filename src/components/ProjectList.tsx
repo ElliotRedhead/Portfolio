@@ -11,20 +11,22 @@ const ProjectList = () => {
       id="projectlist"
       className="container-fluid"
       ref={projectlist}>
-      {projectData.map(
-        ({ id, name, shortDesc, technologies, repoLink, liveLink }) => {
-          return(
-            <ProjectSummary
-              key={id}
-              name={name}
-              shortDesc={shortDesc}
-              technologies={technologies}
-              repoLink={repoLink}
-              liveLink={liveLink}
-            />
-          );
-        }
-      )}
+      <div className="row">
+        {projectData.map(
+          ({ id, name, shortDesc, technologies, repoLink, liveLink }) => {
+            return(
+              <ProjectSummary
+                key={id}
+                name={name}
+                shortDesc={shortDesc}
+                technologies={technologies}
+                repoLink={repoLink}
+                liveLink={liveLink}
+              />
+            );
+          }
+        )}
+      </div>
     </div>
   );
 };
