@@ -12,7 +12,9 @@ const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) =
         <div className="d-flex flex-column justify-content-around">
           <p>{name}</p>
           <p>{shortDesc}</p>
-          {technologyIcons}
+          <div className="d-flex justify-content-around">
+            {technologyIcons}
+          </div>
           <button><a target="_blank" rel="noopener noreferrer" href={repoLink}>Repo Link</a></button>
           <button><a target="_blank" rel="noopener noreferrer" href={liveLink}>Live Link</a></button>
         </div>
