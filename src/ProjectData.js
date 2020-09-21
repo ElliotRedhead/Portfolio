@@ -4,7 +4,7 @@ const projectData = [
     name: "React Portfolio",
     shortDesc: "An interactive project showcase.",
     fullDesc: "",
-    technologies: ["HTML","SASS","Javascript","React", "React Hooks", "Git"],
+    technologies: ["HTML","SASS","Javascript","React", "Git"],
     repoLink: "https://github.com/ElliotRedhead/ReactPortfolio",
     liveLink:"https://www.elliotredhead.com/"
   },
