@@ -8,7 +8,7 @@ const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) =
     };
     const techImageSource = `/images/techicons/${slugify(technology)}.svg`;
     const techImageAltText = `${technology} icon.`;
-    return <img src={techImageSource} key={technology} alt={techImageAltText} style={{width:"50px", height:"50px"}}/>;
+    return <img src={techImageSource} className="col-2" key={technology} alt={techImageAltText} style={{width:"50px", height:"50px"}}/>;
   });
 
   return (
@@ -17,7 +17,7 @@ const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) =
         <div className="d-flex flex-column justify-content-around">
           <p>{name}</p>
           <p>{shortDesc}</p>
-          <div className="d-flex justify-content-around">
+          <div className="row d-flex justify-content-center">
             {technologyIcons}
           </div>
           <button><a target="_blank" rel="noopener noreferrer" href={repoLink}>Repo Link</a></button>
