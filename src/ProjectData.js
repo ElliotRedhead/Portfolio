@@ -2,7 +2,7 @@ const projectData = [
   {
     id: 1,
     name: "React Portfolio",
-    shortDesc: "An interactive project showcase.",
+    shortDesc: "An interactive project showcase, displaying featured projects.",
     fullDesc: "",
     technologies: ["HTML","SASS","Javascript","React", "Git"],
     repoLink: "https://github.com/ElliotRedhead/ReactPortfolio",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) => {
   const technologyIcons = technologies.map((technology) => {
@@ -8,19 +8,26 @@ const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) =
     };
     const techImageSource = `/images/techicons/${slugify(technology)}.svg`;
     const techImageAltText = `${technology} icon.`;
-    return <img src={techImageSource} className="col-2" key={technology} alt={techImageAltText} style={{width:"50px", height:"50px"}}/>;
+    return <img 
+      data-toggle="tooltip"
+      title={technology}
+      src={techImageSource}
+      className="col-2"
+      key={technology}
+      alt={techImageAltText}
+      style={{width:"100%", height:"100%", objectFit:"contain"}}/>;
   });
 
   return (
     <>
       <div className="col-12 col-md-4">
         <div className="d-flex flex-column justify-content-around">
-          <p>{name}</p>
+          <p className="text-center">{name}</p>
           <p>{shortDesc}</p>
-          <div className="row d-flex justify-content-center">
+          <div className="row d-flex justify-content-center iconsContainer">
             {technologyIcons}
           </div>
-          <button><a target="_blank" rel="noopener noreferrer" href={repoLink}>Repo Link</a></button>
+          <button data-toggle="tooltip" title="test"><a target="_blank" rel="noopener noreferrer" href={repoLink}>Repo Link</a></button>
           <button><a target="_blank" rel="noopener noreferrer" href={liveLink}>Live Link</a></button>
         </div>
       </div>
