@@ -36,7 +36,7 @@ const Jumbotron = () => {
       };
       setTimeout(function () {
         buttonAnimationDelay();
-      }, 3000);
+      }, 2500);
       const interval = setInterval(() => {
         cursorDisplay === "" ? setCursorDisplay("_") : setCursorDisplay("");
       }, 700);
