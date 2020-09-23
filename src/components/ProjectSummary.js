@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) => {
+const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) => {  
   const technologyIcons = technologies.map((technology) => {
     const slugify = (technology) => {
       technology = technology.replace(/ /g,"_").toLowerCase();
@@ -20,8 +20,8 @@ const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) =
 
   return (
     <>
-      <div className="col-12 col-md-4">
-        <div className="d-flex flex-column justify-content-around">
+      <div className="col-12 col-md-6 col-lg-4">
+        <div className="d-flex flex-column justify-content-around" style={{minHeight:"100vh"}}>
           <p className="text-center">{name}</p>
           <p>{shortDesc}</p>
           <div className="row d-flex justify-content-center iconsContainer">

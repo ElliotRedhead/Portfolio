@@ -6,6 +6,8 @@ import ProjectSummary from "./ProjectSummary";
 
 const ProjectList = () => {
   const projectlist = useRef<HTMLDivElement>(null);
+  //   console.log(projectData.length); Can be used with breakpoint to determine total number of projects.
+
   return (
     <div
       id="projectlist"
