@@ -23,7 +23,7 @@ const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) =
       <div className="col-12 col-md-6 col-lg-4">
         <div className="d-flex flex-column justify-content-around" style={{minHeight:"100vh"}}>
           <p className="text-center">{name}</p>
-          <p>{shortDesc}</p>
+          <p className="text-center">{shortDesc}</p>
           <div className="row d-flex justify-content-center iconsContainer">
             {technologyIcons}
           </div>
