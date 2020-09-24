@@ -72,7 +72,7 @@ const Jumbotron = () => {
         </div>
         <div className="row mt-4">
           <div className="col-12 text-center">
-            <button className={`btn-light ${additionalButtonClasses.current}`}
+            <button className={`btn-light jumbotronNavigationButton ${additionalButtonClasses.current}`}
               onClick={projectsClickHandler}
             >
               Projects
