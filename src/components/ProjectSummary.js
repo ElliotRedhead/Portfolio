@@ -15,15 +15,15 @@ const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) =
       className="col-2"
       key={technology}
       alt={techImageAltText}
-      style={{width:"100%", height:"100%", objectFit:"contain"}}/>;
+      style={{objectFit:"contain"}}/>;
   });
 
   return (
     <>
       <div className="col-12 col-md-6 col-lg-4">
-        <div className="d-flex flex-column justify-content-around" style={{minHeight:"100vh"}}>
-          <p className="text-center">{name}</p>
-          <p className="text-center">{shortDesc}</p>
+        <div className="d-flex flex-column justify-content-center" style={{minHeight:"100vh"}}>
+          <h2 className="text-center projectName">{name}</h2>
+          <p className="text-center projectShortDescription">{shortDesc}</p>
           <div className="row d-flex justify-content-center iconsContainer">
             {technologyIcons}
           </div>

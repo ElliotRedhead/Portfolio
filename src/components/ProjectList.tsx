@@ -10,7 +10,7 @@ const ProjectList = () => {
 
   return (
     <div
-      id="projectlist"
+      id="projectList"
       className="container-fluid d-flex flex-column justify-content-center"
       ref={projectlist}>
       <div className="row">

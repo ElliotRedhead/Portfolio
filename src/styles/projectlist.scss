@@ -1,6 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 
-#projectlist {
-    font-family: 'Amatic SC', cursive;
-    min-height: 100vh;
+#projectList {
+  font-family: "Amatic SC", cursive;
+  min-height: 100vh;
+}
+
+.projectName {
+  font-size: 3rem;
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.projectShortDescription {
+  height: 3rem;
+}
+
+.iconsContainer {
+  height: 8rem;
+  @media (min-width: 425px) and (max-width: 768px) {
+    height: 10rem;
+  }
+  img {
+    max-height: 4.5rem;
+  }
 }
