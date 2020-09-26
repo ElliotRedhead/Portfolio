@@ -1,11 +1,12 @@
-import React, { useLayoutEffect, useRef, useContext } from "react";
-import "./../styles/jumbotron.scss";
+import React, { useLayoutEffect, useRef, useContext, useState } from "react";
+import { use100vh } from "react-div-100vh";
 import useTypewriter from "react-typewriter-hook";
-import { useState } from "react";
 import DisplayContext from "../contexts/DisplayContext";
+import "./../styles/jumbotron.scss";
 
 
 const Jumbotron = () => {
+
   const titleText = "Elliot Redhead";
   const animatedHeading = useTypewriter(titleText);
 
@@ -16,11 +17,13 @@ const Jumbotron = () => {
   let additionalButtonClasses = useRef("");
 
   const context = useContext(DisplayContext);
+  const scrollHeight = use100vh() || undefined;
+
 
   const projectsClickHandler = () => {
     context.toggleProjectsVisibility();
     setTimeout(function(){
-      window.scrollTo({ top:window.innerHeight, behavior:"smooth" });},
+      window.scrollTo({ top:scrollHeight, behavior:"smooth" });},
     200);
   };
 
