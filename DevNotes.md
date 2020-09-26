@@ -16,6 +16,11 @@ useRef is used to both access DOM element values directly and as a "reference", 
 
 The useContext hook is used to trigger display of the projects list (see DisplayContext file).
 
+## 100vh on Mobile
+
+100vh is not supported across mobile/tablet devices as it does not consider the the address bar.  
+Use window.innerHeight in javascript as an alternative.
+
 ## Tools/Snippets
 
 ### Accessing development project on network from WSL2

@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, useRef, useContext, useState } from "react";
-import { use100vh } from "react-div-100vh";
 import useTypewriter from "react-typewriter-hook";
 import DisplayContext from "../contexts/DisplayContext";
 import "./../styles/jumbotron.scss";
@@ -17,13 +16,12 @@ const Jumbotron = () => {
   let additionalButtonClasses = useRef("");
 
   const context = useContext(DisplayContext);
-  let fillDisplayHeight = use100vh() || undefined;
 
 
   const projectsClickHandler = () => {
     context.toggleProjectsVisibility();
     setTimeout(function(){
-      window.scrollTo({ top:fillDisplayHeight, behavior:"smooth" });},
+      window.scrollTo({ top:window.innerHeight, behavior:"smooth" });},
     200);
   };
 
@@ -49,7 +47,7 @@ const Jumbotron = () => {
 
 
   return (
-    <div className="jumbotron d-flex align-items-center" style={{height: fillDisplayHeight}}>
+    <div className="jumbotron d-flex align-items-center" style={{height: window.innerHeight}}>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
