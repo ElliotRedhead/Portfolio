@@ -15,3 +15,15 @@ useRef is used to both access DOM element values directly and as a "reference", 
 ## useContext Hook for projects list visibility
 
 The useContext hook is used to trigger display of the projects list (see DisplayContext file).
+
+## Tools/Snippets
+
+### Accessing development project on network from WSL2
+
+Use the following command from an elevated cmd:
+
+```cmd
+netsh interface portproxy add v4tov4 listenport=<port-to-listen> listenaddress=0.0.0.0 connectport=<port-to-forward> connectaddress=<forward-to-this-IP-address>
+```
+
+Access the network IP & port (e.g. 192.etc:3000) from the target device.
