@@ -1,6 +1,12 @@
 import React from "react";
+import ReactTooltip from "react-tooltip";
 
-const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) => {  
+
+
+const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) => { 
+  
+
+
   const technologyIcons = technologies.map((technology) => {
     const slugify = (technology) => {
       technology = technology.replace(/ /g,"_").toLowerCase();
@@ -8,14 +14,18 @@ const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) =
     };
     const techImageSource = `/images/techicons/${slugify(technology)}.svg`;
     const techImageAltText = `${technology} icon.`;
-    return <img 
-      data-toggle="tooltip"
-      title={technology}
-      src={techImageSource}
-      className="col-2"
-      key={technology}
-      alt={techImageAltText}
-      style={{objectFit:"contain"}}/>;
+    return (
+      <React.Fragment key={technology}>
+        <ReactTooltip />
+        <img 
+          data-tip={technology}
+          src={techImageSource}
+          className="col-2"
+          key={technology}
+          alt={techImageAltText}
+          style={{objectFit:"contain"}}/>
+      </React.Fragment>
+    );
   });
 
   return (
