@@ -17,13 +17,13 @@ const Jumbotron = () => {
   let additionalButtonClasses = useRef("");
 
   const context = useContext(DisplayContext);
-  const scrollHeight = use100vh() || undefined;
+  let fillDisplayHeight = use100vh() || undefined;
 
 
   const projectsClickHandler = () => {
     context.toggleProjectsVisibility();
     setTimeout(function(){
-      window.scrollTo({ top:scrollHeight, behavior:"smooth" });},
+      window.scrollTo({ top:fillDisplayHeight, behavior:"smooth" });},
     200);
   };
 
@@ -49,7 +49,7 @@ const Jumbotron = () => {
 
 
   return (
-    <div className="jumbotron d-flex align-items-center">
+    <div className="jumbotron d-flex align-items-center" style={{height: fillDisplayHeight}}>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
