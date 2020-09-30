@@ -13,7 +13,7 @@ const Jumbotron = () => {
 
   const titleReference = useRef<HTMLDivElement>(null);
   let additionalSubheadingClasses = useRef("invisible");
-  let additionalButtonClasses = useRef("");
+  let additionalButtonClasses = useRef("invisible");
 
   const context = useContext(DisplayContext);
 
@@ -28,7 +28,6 @@ const Jumbotron = () => {
   useLayoutEffect(() => {
     const titleNode = titleReference.current;
     additionalSubheadingClasses.current = "invisible";
-    additionalButtonClasses.current = "invisible";
 
     if (titleNode && titleNode.innerHTML.startsWith(titleText)) {
       additionalSubheadingClasses.current = "subheadingFade";
