@@ -46,41 +46,44 @@ const Jumbotron = () => {
 
 
   return (
-    <div className="jumbotron d-flex align-items-center" style={{height: window.innerHeight}}>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-12">
-            <h1
-              id="titleHeading"
-              ref={titleReference}
-              className="text-center mb-3"
-            >
-              {animatedHeading}
-              <span id="titleCursor">{cursorDisplay}</span>
-            </h1>
+    <>
+      <p style={{position:"absolute", top:"0.5rem", left:"0.2rem", color: "#666666", fontSize: "0.8rem"}}>elliot@elliotredhead.com</p>
+      <div className="jumbotron d-flex align-items-center" style={{height: window.innerHeight}}>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-12">
+              <h1
+                id="titleHeading"
+                ref={titleReference}
+                className="text-center mb-3"
+              >
+                {animatedHeading}
+                <span id="titleCursor">{cursorDisplay}</span>
+              </h1>
+            </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <h2
-              id="subHeading"
-              className={`text-center ${additionalSubheadingClasses.current}`}
-            >
+          <div className="row">
+            <div className="col-12">
+              <h2
+                id="subHeading"
+                className={`text-center ${additionalSubheadingClasses.current}`}
+              >
               Web Developer
-            </h2>
+              </h2>
+            </div>
           </div>
-        </div>
-        <div className="row mt-4">
-          <div className="col-12 text-center">
-            <button className={`btn-light jumbotronNavigationButton ${additionalButtonClasses.current}`}
-              onClick={projectsClickHandler}
-            >
+          <div className="row mt-4">
+            <div className="col-12 text-center">
+              <button className={`btn-light jumbotronNavigationButton ${additionalButtonClasses.current}`}
+                onClick={projectsClickHandler}
+              >
               Projects
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
