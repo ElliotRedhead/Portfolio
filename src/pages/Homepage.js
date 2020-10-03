@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ReactGA from "react-ga";
+import CertificateList from "../components/CertificateList";
 import Jumbotron from "../components/Jumbotron";
 import LinksBanner from "../components/LinksBanner";
 import ProjectList from "../components/ProjectList";
@@ -16,7 +17,10 @@ const Homepage = () => {
       <LinksBanner/>
       <Jumbotron />
       {context.projectsVisibility === false ? null : (
-        <ProjectList />
+        <>
+          <ProjectList />
+          <CertificateList />
+        </>
       )}
     </>
   );
