@@ -1,7 +1,6 @@
 import React from "react";
 import certificateData from "../CertificateData";
 import CertificateSummary from "./CertificateSummary";
-import "../styles/main.scss";
 import "../styles/certificates.scss";
 
 
