@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
-
-$code-font: "Fira Code", monospace;
+@import "./main.scss";
 
 html {
   font-size: 16px;
@@ -26,7 +24,7 @@ html {
   div {
     div {
       div {
-        font-family: $code-font;
+        // font-family: $codefont;
         h1 {
           font-size: 1.8em;
           font-weight: normal;
