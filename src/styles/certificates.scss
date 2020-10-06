@@ -6,6 +6,12 @@
 }
 
 .certificateListItem {
+  font-family: $codefont;
   list-style-type: none;
   text-decoration: none;
+  a {
+    button:hover {
+      background-color: $buttonhoverbackgroundcolour;
+    }
+  }
 }

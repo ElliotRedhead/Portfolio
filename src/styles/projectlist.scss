@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import "./global.scss";
 
 #projectList {
   font-family: "Amatic SC", cursive;
@@ -27,4 +28,16 @@
 
 .__react_component_tooltip {
   font-size: 1.5rem !important;
+}
+
+.projectLinkButton {
+  &:hover {
+    background-color: $buttonhoverbackgroundcolour;
+    a {
+      text-decoration: none;
+    }
+  }
+  a {
+    color: black !important;
+  }
 }

@@ -44,6 +44,9 @@ html {
   border-radius: 0.2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  &:hover {
+    background-color: $buttonhoverbackgroundcolour !important;
+  }
 }
 
 #titleCursor {
