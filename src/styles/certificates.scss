@@ -1,5 +1,11 @@
 @import "./global.scss";
 
-h1 {
+#certificateHeading {
   font-family: $codefont;
+  font-size: 1.5em;
+}
+
+.certificateListItem {
+  list-style-type: none;
+  text-decoration: none;
 }

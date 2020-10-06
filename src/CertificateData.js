@@ -1,6 +1,12 @@
 const certificateData = [
   {
     id: 1,
+    name: "Code Institute Full Stack Bootcamp",
+    shortDesc: "",
+    certLink:"https://elliot-portfolio.s3.eu-west-2.amazonaws.com/Elliot-Redhead-Code-Institute-First-Class.pdf",
+  },
+  {
+    id: 3,
     name: "React, The Big Picture",
     shortDesc: "",
     certLink:"https://elliot-portfolio.s3.eu-west-2.amazonaws.com/react-the-big-picture.pdf",
