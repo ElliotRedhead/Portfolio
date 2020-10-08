@@ -25,6 +25,15 @@ const projectData = [
     technologies: ["HTML","CSS","Javascript","Python","Flask","MongoDB","jQuery", "Amazon Web Services (AWS)","Travis CI","Heroku","Git", "Bootstrap"],
     repoLink: "https://github.com/ElliotRedhead/WorkoutPlanner",
     liveLink:"https://workout-exercise-planner.herokuapp.com/welcome"
+  },
+  {
+    id: 4,
+    name: "Introduction to ICPMS",
+    shortDesc: "Beginner's intro to Inductively Coupled Plasma Mass Spectrometry",
+    fullDesc: "",
+    technologies: ["HTML","CSS", "Git", "Bootstrap"],
+    repoLink: "https://github.com/ElliotRedhead/IntroductionToICP-MS",
+    liveLink:"https://elliotredhead.github.io/IntroductionToICP-MS/"
   }
 ];
 
