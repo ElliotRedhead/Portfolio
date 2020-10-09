@@ -28,6 +28,15 @@ const projectData = [
   },
   {
     id: 4,
+    name: "NHL Showdown",
+    shortDesc: "Statistics face-off between two NHL teams.",
+    fullDesc: "",
+    technologies: ["HTML","CSS","Javascript","jQuery","Git", "Bootstrap"],
+    repoLink: "https://github.com/ElliotRedhead/NHLTeamShowdown",
+    liveLink:"https://elliotredhead.github.io/NHLTeamShowdown"
+  },
+  {
+    id: 5,
     name: "Introduction to ICPMS",
     shortDesc: "Beginner's intro to Inductively Coupled Plasma Mass Spectrometry",
     fullDesc: "",
