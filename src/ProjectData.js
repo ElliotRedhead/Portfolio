@@ -4,7 +4,7 @@ const projectData = [
     name: "GitStats",
     shortDesc: "WIP - GitHub commit statistics, drilldown on any public repo using React & REST API.",
     fullDesc: "",
-    technologies: ["HTML","SASS","Javascript","React","Material UI", "Git"],
+    technologies: ["HTML","SASS","Javascript","React","Material UI", "Travis CI", "Git"],
     repoLink: "https://github.com/ElliotRedhead/GitStats",
     liveLink: "https://elliotredhead.github.io/GitStats/"
   },
