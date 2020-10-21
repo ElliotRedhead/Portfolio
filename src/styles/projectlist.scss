@@ -31,13 +31,8 @@
 }
 
 .projectLinkButton {
+  width: 100%;
   &:hover {
     background-color: $buttonhoverbackgroundcolour;
-    a {
-      text-decoration: none;
-    }
-  }
-  a {
-    color: black !important;
   }
 }

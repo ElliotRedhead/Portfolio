@@ -37,8 +37,8 @@ const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) =
           <div className="row d-flex justify-content-center iconsContainer">
             {technologyIcons}
           </div>
-          <button className="my-1 projectLinkButton" data-toggle="tooltip" title={`${name} GitHub`}><a target="_blank" rel="noopener noreferrer" href={repoLink}>GitHub Repository</a></button>
-          <button className="my-1 projectLinkButton" data-toggle="tooltip" title={`${name} Live Deployment`}><a target="_blank" rel="noopener noreferrer" href={liveLink}>Live Website</a></button>
+          <a target="_blank" rel="noopener noreferrer" href={repoLink}><button className="my-1 projectLinkButton" data-toggle="tooltip" title={`${name} GitHub`}>GitHub Repository</button></a>
+          <a target="_blank" rel="noopener noreferrer" href={liveLink}><button className="my-1 projectLinkButton" data-toggle="tooltip" title={`${name} Live Deployment`}>Live Website</button></a>
         </div>
       </div>
     </>
