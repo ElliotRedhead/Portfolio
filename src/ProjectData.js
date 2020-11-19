@@ -52,15 +52,6 @@ const projectData = [
 		technologies: ["HTML","CSS","Javascript","jQuery","Git", "Bootstrap"],
 		repoLink: "https://github.com/ElliotRedhead/NHLTeamShowdown",
 		liveLink:"https://elliotredhead.github.io/NHLTeamShowdown"
-	},
-	{
-		id: 7,
-		name: "Introduction to ICPMS",
-		shortDesc: "Beginner's intro to Inductively Coupled Plasma Mass Spectrometry",
-		fullDesc: "",
-		technologies: ["HTML","CSS", "Git", "Bootstrap"],
-		repoLink: "https://github.com/ElliotRedhead/IntroductionToICP-MS",
-		liveLink:"https://elliotredhead.github.io/IntroductionToICP-MS/"
 	}
 ];
 
