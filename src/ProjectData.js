@@ -5,8 +5,8 @@ const projectData = [
 		shortDesc: "WIP - Visibility on inventory levels with user authorisation. Full stack project with Node, Express & React.",
 		fullDesc: "",
 		technologies: ["HTML","Javascript","React","Node", "Express", "PostgreSQL", "Git", "Bootstrap", "Yarn", "Docker"],
-		repoLink: "https://github.com/ElliotRedhead/GitStats",
-		liveLink: "https://elliotredhead.github.io/GitStats/"
+		repoLink: "https://github.com/ElliotRedhead/YourInventoryManager",
+		liveLink: "#"
 	},
 	{
 		id: 2,
