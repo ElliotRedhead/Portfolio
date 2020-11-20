@@ -2,37 +2,37 @@
 @import "./global.scss";
 
 #projectList {
-  font-family: "Amatic SC", cursive;
+	font-family: "Amatic SC", cursive;
 }
 
 .projectName {
-  font-size: 3rem;
-  @media (min-width: 768px) {
-    font-size: 1.5rem;
-  }
+	font-size: 2.7rem;
+	@media (min-width: 768px) {
+		font-size: 1.25rem;
+	}
 }
 
 .projectShortDescription {
-  height: 3rem;
+	height: 2.8rem;
 }
 
 .iconsContainer {
-  height: 8rem;
-  @media (min-width: 425px) and (max-width: 768px) {
-    height: 10rem;
-  }
-  img {
-    max-height: 4.5rem;
-  }
+	height: 7rem;
+	@media (min-width: 425px) and (max-width: 768px) {
+		height: 10rem;
+	}
+	img {
+		max-height: 3rem;
+	}
 }
 
 .__react_component_tooltip {
-  font-size: 1.5rem !important;
+	font-size: 1.25rem !important;
 }
 
 .projectLinkButton {
-  width: 100%;
-  &:hover {
-    background-color: $buttonhoverbackgroundcolour;
-  }
+	width: 100%;
+	&:hover {
+		background-color: $buttonhoverbackgroundcolour;
+	}
 }

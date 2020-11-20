@@ -31,9 +31,9 @@ const ProjectSummary = ({ name, shortDesc, technologies, repoLink, liveLink }) =
 	return (
 		<>
 			<div className="col-12 col-md-6 col-lg-4">
-				<div className="d-flex flex-column justify-content-center" style={{minHeight:window.innerHeight}}>
+				<div className="d-flex flex-column justify-content-center" style={{minHeight:window.innerHeight, padding:"0 1rem"}}>
 					<h2 className="text-center projectName">{name}</h2>
-					<p className="text-center projectShortDescription">{shortDesc}</p>
+					<p className="text-center projectShortDescription" style={{minHeight:"5rem"}}>{shortDesc}</p>
 					<div className="row d-flex justify-content-center iconsContainer">
 						{technologyIcons}
 					</div>
