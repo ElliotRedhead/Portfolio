@@ -7,23 +7,23 @@ import DisplayContext from "../contexts/DisplayContext.tsx";
 
 
 const App = () => {
-  const [projectsVisibility, setProjectsVisibility] = useState(false);
-  const toggleProjectsVisibility = () => {
-    setProjectsVisibility(true);
-  };
+	const [projectsVisibility, setProjectsVisibility] = useState(false);
+	const toggleProjectsVisibility = () => {
+		setProjectsVisibility(true);
+	};
   
-  return (
-    <>
-      <Switch>
-        <Route path={["/", "/ReactPortfolio"]}>
-          <DisplayContext.Provider value={{ projectsVisibility, toggleProjectsVisibility }}>
-            <Homepage/>
-          </DisplayContext.Provider>
-        </Route> 
-        <Route component={pageNotFound404} />
-      </Switch>
-    </>
-  );
+	return (
+		<>
+			<Switch>
+				<Route path={["/", "/ReactPortfolio"]}>
+					<DisplayContext.Provider value={{ projectsVisibility, toggleProjectsVisibility }}>
+						<Homepage/>
+					</DisplayContext.Provider>
+				</Route> 
+				<Route component={pageNotFound404} />
+			</Switch>
+		</>
+	);
 };
 
 export default App;

@@ -5,7 +5,7 @@ import App from "./components/App";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 render(<Router basename={process.env.PUBLIC_URL}>
-  <App />
+	<App />
 </Router>,
 document.getElementById("app")
 );

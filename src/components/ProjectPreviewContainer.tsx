@@ -6,22 +6,22 @@ import { VisibilityProperty } from "csstype"; // eslint-disable-line no-unused-v
  * @returns {object} The project preview object.
  */
 const ProjectPreviewContainer=() => {
-  const [containerVisibility, switchComponentVisibility] = useState<VisibilityProperty>("hidden");
+	const [containerVisibility, switchComponentVisibility] = useState<VisibilityProperty>("hidden");
 
-  return (
-    <div
-      onMouseOver={() => {
-        switchComponentVisibility("visible");
-      }}
-      onMouseOut={() => {
-        switchComponentVisibility("hidden");
-      }}
-    >
-      <button style={{ visibility: containerVisibility }}>
+	return (
+		<div
+			onMouseOver={() => {
+				switchComponentVisibility("visible");
+			}}
+			onMouseOut={() => {
+				switchComponentVisibility("hidden");
+			}}
+		>
+			<button style={{ visibility: containerVisibility }}>
         Only visible on parent element hover.
-      </button>
-    </div>
-  );
+			</button>
+		</div>
+	);
 };
 
 export default ProjectPreviewContainer;
