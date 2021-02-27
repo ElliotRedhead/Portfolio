@@ -1,0 +1,48 @@
+.jumbotron {
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+  div {
+    div {
+      div {
+        h1 {
+          font-size: 1.8em;
+          font-weight: normal;
+          padding-bottom: 0.5rem;
+        }
+        h2 {
+          font-size: 1.3em;
+          font-weight: lighter;
+          padding-bottom: 0.4rem;
+        }
+      }
+    }
+  }
+}
+
+.jumbotronNavigationButton {
+  border-radius: 0.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  &:hover {
+    background-color: $buttonhoverbackgroundcolour !important;
+  }
+}
+
+#titleCursor {
+  position: absolute;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.subheadingFade {
+  animation: 3s fade-in forwards;
+}
