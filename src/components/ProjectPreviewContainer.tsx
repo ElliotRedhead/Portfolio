@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { VisibilityProperty } from "csstype"; // eslint-disable-line no-unused-vars
+import { Property } from "csstype";
+
 
 /**
  * React Hooks are used to toggle visibility of this element, a conditional ternary operator determines what visibility to pass based on the current state.
  * @returns {object} The project preview object.
  */
 const ProjectPreviewContainer=() => {
-	const [containerVisibility, switchComponentVisibility] = useState<VisibilityProperty>("hidden");
+	const [containerVisibility, switchComponentVisibility] = useState<Property.Visibility>("hidden");
 
 	return (
 		<div

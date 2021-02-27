@@ -12,11 +12,12 @@ const CertificateList = () => {
 			<div className="row">
 				<div className="ol col-12">
 					{certificateData.map(
-						({ id, name, certLink }) => {
+						({ id, certName, certLink }) => {
 							return(
 								<CertificateSummary
 									key={id}
-									name={name}
+									id={id}
+									certName={certName}
 									certLink={certLink}
 								/>
 							);
