@@ -1,9 +1,9 @@
 import React from "react";
 
 type CertificateProps = {
-	id: number,
+	id?: number,
 	certName: string,
-	shortDesc: string,
+	shortDesc?: string,
 	certLink: string
 }
 

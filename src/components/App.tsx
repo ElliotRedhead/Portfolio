@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import { Homepage } from "../pages/Homepage";
 import pageNotFound404 from "../pages/PageNotFound404";
-import DisplayContext from "../contexts/DisplayContext.tsx";
+import DisplayContext from "../contexts/DisplayContext";
 
 
 
