@@ -1,9 +1,18 @@
-const certificateData = [
+interface certificateData {
+	id:number,
+	certName:string,
+	shortDesc:string,
+	certLink:string,
+	proficiency:string
+}
+
+const certificateData: certificateData[] = [
 	{
 		id: 1,
 		certName: "Code Institute Full Stack Bootcamp",
 		shortDesc: "",
 		certLink:"https://elliot-portfolio.s3.eu-west-2.amazonaws.com/Elliot-Redhead-Code-Institute-First-Class.pdf",
+		proficiency: ""
 	},
 	{
 		id: 2,
