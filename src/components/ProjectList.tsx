@@ -14,18 +14,15 @@ const ProjectList = () => {
 			ref={projectList}>
 			<div className="row">
 				{projectData.map(
-					({ id, name, shortDesc, technologies, repoLink, liveLink }) => {
-						return(
-							<ProjectSummary
-								key={id}
-								projectName={name}
-								shortDesc={shortDesc}
-								technologies={technologies}
-								repoLink={repoLink}
-								liveLink={liveLink}
-							/>
-						);
-					}
+					({ id, name, shortDesc, technologies, repoLink, liveLink }) => (
+						<ProjectSummary
+							key={id}
+							projectName={name}
+							shortDesc={shortDesc}
+							technologies={technologies}
+							repoLink={repoLink}
+							liveLink={liveLink} />
+					)
 				)}
 			</div>
 		</div>

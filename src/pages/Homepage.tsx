@@ -9,7 +9,7 @@ const Homepage = () => {
 	const context = useContext(DisplayContext);
 	return (
 		<>
-			<LinksBanner/>
+			<LinksBanner />
 			<Jumbotron />
 			{context.projectsVisibility && (
 				<>
@@ -21,4 +21,4 @@ const Homepage = () => {
 	);
 };
 
-export {Homepage};
+export { Homepage };

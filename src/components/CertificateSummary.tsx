@@ -7,9 +7,12 @@ type CertificateProps = {
 	certLink: string
 }
 
-const CertificateSummary = ({certName, certLink}: CertificateProps) => (
+const CertificateSummary = ({ certName, certLink }: CertificateProps) => (
 	<li className="my-2 certificateListItem d-flex justify-content-center">
-		<a href={certLink} target="_blank" rel="noopener noreferrer">
+		<a
+			href={certLink}
+			target="_blank"
+			rel="noopener noreferrer">
 			<button>
 				{certName}
 			</button>

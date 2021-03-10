@@ -17,7 +17,7 @@ const App = () => {
 			<Switch>
 				<Route path={["/", "/ReactPortfolio"]}>
 					<DisplayContext.Provider value={{ projectsVisibility, toggleProjectsVisibility }}>
-						<Homepage/>
+						<Homepage />
 					</DisplayContext.Provider>
 				</Route> 
 				<Route component={pageNotFound404} />

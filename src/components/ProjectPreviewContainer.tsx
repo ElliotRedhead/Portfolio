@@ -16,10 +16,9 @@ const ProjectPreviewContainer= () => {
 			}}
 			onMouseOut={() => {
 				switchComponentVisibility("hidden");
-			}}
-		>
+			}}>
 			<button style={{ visibility: containerVisibility }}>
-        Only visible on parent element hover.
+				Only visible on parent element hover.
 			</button>
 		</div>
 	);

@@ -35,7 +35,9 @@
         "build": "react-scripts build && cp build/index.html build/404.html",
         "test": "CI=true react-scripts test --env=jsdom --passWithNoTests",
         "test:coverage": "npm test --coverage",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+		"lint-vis": "eslint src --ext .js,.jsx,.ts,.tsx",
+		"lint-fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix"
     },
     "eslintConfig": {
         "extends": "react-app"

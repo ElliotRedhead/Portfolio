@@ -6,12 +6,16 @@ const HiddenLink = () => {
 	const [linkVisibility, switchLinkVisibility] = useState<Property.Visibility>("hidden");
 	return (
 		<div
-			onMouseOver={() => {switchLinkVisibility("visible");}}
-			onMouseOut={() => {switchLinkVisibility("hidden");}}>
+			onMouseOver={() => {
+				switchLinkVisibility("visible");
+			}}
+			onMouseOut={() => {
+				switchLinkVisibility("hidden");
+			}}>
 			<button
-				style={{visibility:linkVisibility}}>
-				<Link to={{pathname:"/home"}}>
-				Home
+				style={{ visibility: linkVisibility }}>
+				<Link to={{ pathname: "/home" }}>
+					Home
 				</Link>
 			</button>
 		</div>

@@ -5,8 +5,14 @@ import "../styles/certificates.scss";
 
 
 const CertificateList = () => (
-	<div className="container-fluid d-flex flex-column justify-content-center" style={{minHeight: window.innerHeight, backgroundColor: "#E9ECEF"}}>
-		<h1 className="text-center" id="certificateHeading">Certification</h1>
+	<div
+		className="container-fluid d-flex flex-column justify-content-center"
+		style={{ minHeight: window.innerHeight, backgroundColor: "#E9ECEF" }}>
+		<h1
+			className="text-center"
+			id="certificateHeading">
+			Certification
+		</h1>
 		<div className="row">
 			<div className="ol col-12">
 				{certificateData.map(
@@ -16,8 +22,7 @@ const CertificateList = () => (
 								key={id}
 								id={id}
 								certName={certName}
-								certLink={certLink}
-							/>
+								certLink={certLink} />
 						)
 				)}
 			</div>
