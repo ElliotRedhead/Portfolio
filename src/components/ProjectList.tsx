@@ -9,8 +9,8 @@ const ProjectList = () => {
 
 	return (
 		<div
-			id="projectList"
-			className="container-fluid d-flex flex-column justify-content-center"
+			id="project-list"
+			className="container d-flex flex-column justify-content-center"
 			ref={projectList}>
 			<div className="row">
 				{projectData.map(

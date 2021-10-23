@@ -24,56 +24,57 @@ const ProjectSummary = ({ projectName, shortDesc, technologies, repoLink, liveLi
 				<img 
 					data-tip={technology}
 					src={techImageSource}
-					className="col-2"
+					className="tech-icon d-flex"
 					key={technology}
-					alt={techImageAltText}
-					style={{ objectFit: "contain" }} />
+					alt={techImageAltText} />
 			</React.Fragment>
 		);
 	});
 
 	return (
-		<>
-			<div className="col-12 col-md-6 col-lg-4">
-				<div
-					className="d-flex flex-column justify-content-center"
-					style={{ minHeight: window.innerHeight, padding: "0 1rem" }}>
-					<h2 className="text-center projectName">
-						{projectName}
-					</h2>
-					<p
-						className="text-center projectShortDescription"
-						style={{ minHeight: "5rem" }}>
-						{shortDesc}
-					</p>
-					<div className="row d-flex justify-content-center iconsContainer">
-						{technologyIcons}
-					</div>
+		<div className="col-12 col-md-6 col-lg-4">
+			<div
+				className="d-flex flex-column justify-content-center mx-2"
+				style={{ height: window.innerHeight }}>
+				<h2 className="text-center project-name">
+					{projectName}
+				</h2>
+				<p
+					className="text-center project-short-description">
+					{shortDesc}
+				</p>
+				<div className="d-flex justify-content-evenly align-items-center flex-wrap icons-container">
+					{technologyIcons}
+				</div>
+				<div className="d-flex flex-column justify-content-evenly">
 					<a
+						className="my-2"
 						target="_blank"
 						rel="noopener noreferrer"
 						href={repoLink}>
 						<button
-							className="my-1 projectLinkButton"
+							className="project-link-button"
 							data-toggle="tooltip"
 							title={`${projectName} GitHub`}>
 							GitHub Repository
 						</button>
 					</a>
+					{liveLink !== "#" &&
 					<a
+						className="mt-1"
 						target="_blank"
 						rel="noopener noreferrer"
 						href={liveLink === "#" ? "" : liveLink}>
 						<button
-							className="my-1 projectLinkButton"
+							className="project-link-button"
 							data-toggle="tooltip"
 							title={`${projectName} Live Deployment`}>
-							{liveLink === "#" ? "To Be Deployed" : "Live Website"}
+							{liveLink === "#" ? "To Be Deployed" : "Live Deployment"}
 						</button>
-					</a>
+					</a>}
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

@@ -1,17 +1,15 @@
-@import "./global.scss";
+@use "variables" as v;
 
-#certificateHeading {
-  font-family: $codefont;
-  font-size: 1.5em;
+#certificate-heading {
+	font-size: 1.5rem;
 }
 
-.certificateListItem {
-  font-family: $codefont;
-  list-style-type: none;
-  text-decoration: none;
-  a {
-    button:hover {
-      background-color: $buttonhoverbackgroundcolour;
-    }
-  }
+.certificate-list-item {
+	list-style-type: none;
+	text-decoration: none;
+	a {
+		button:hover {
+			background-color: v.$buttonhoverbackgroundcolour;
+		}
+	}
 }

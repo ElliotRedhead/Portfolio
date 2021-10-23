@@ -4,6 +4,7 @@
 	"private": true,
 	"homepage": "https://www.elliotredhead.com",
 	"dependencies": {
+		"@popperjs/core": "^2.11.6",
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.3.2",
 		"@testing-library/user-event": "^7.1.2",
@@ -14,9 +15,7 @@
 		"@types/react-dom": "^16.9.8",
 		"@types/react-router-dom": "^5.1.5",
 		"animate.css": "^4.1.0",
-		"bootstrap": "^4.5.0",
-		"node-sass": "^4.14.1",
-		"popper.js": "^1.16.1",
+		"bootstrap": "5.2",
 		"react": "^16.13.1",
 		"react-bootstrap": "^1.3.0",
 		"react-dom": "^16.13.1",
@@ -24,7 +23,8 @@
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "^3.4.3",
 		"react-tooltip": "^4.2.10",
-		"react-typewriter-hook": "^1.0.1"
+		"react-typewriter-hook": "^1.0.1",
+		"sass": "^1.43.3"
 	},
 	"scripts": {
 		"predeploy": "npm run build",

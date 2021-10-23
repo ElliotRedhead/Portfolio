@@ -1,5 +1,25 @@
+@use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
 
-$codefont: "Fira Code", monospace;
-
-$buttonhoverbackgroundcolour: #aeb6bf;
+html {
+	body {
+		overflow-x: hidden !important;
+		font-family: v.$codefont;
+	}
+	font-size: 18px;
+	@media (min-width: 576px) {
+		font-size: 1.7rem;
+	}
+	@media (min-width: 768px) {
+		font-size: 1.9rem;
+	}
+	@media (min-width: 1024px) {
+		font-size: 2rem;
+	}
+	// @media (min-width: 1440px) {
+	// 	font-size: 2.2rem;
+	// }
+	// @media (min-width: 2000px) {
+	// 	font-size: 2.4rem;
+	// }
+}

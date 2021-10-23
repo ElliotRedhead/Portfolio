@@ -10,7 +10,7 @@ const CertificateList = () => (
 		style={{ minHeight: window.innerHeight, backgroundColor: "#E9ECEF" }}>
 		<h1
 			className="text-center"
-			id="certificateHeading">
+			id="certificate-heading">
 			Certification
 		</h1>
 		<div className="row">

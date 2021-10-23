@@ -1,67 +1,40 @@
-@import "./global.scss";
-
-html {
-  font-size: 16px;
-  @media (min-width: 768px) {
-    font-size: 1.5rem;
-  }
-  @media (min-width: 1024px) {
-    font-size: 2.2rem;
-  }
-  @media (min-width: 1440px) {
-    font-size: 2.5rem;
-  }
-  @media (min-width: 2000px) {
-    font-size: 3rem;
-  }
+#jumbotron-heading {
+	div {
+		padding: 1.5rem 2ch 1.5rem 1ch;
+		h1 {
+			font-size: 1.8rem;
+			font-weight: normal;
+			padding: 0.25rem 1rem;
+		}
+		h2 {
+			font-size: 1.3rem;
+			font-weight: lighter;
+			padding: 0.25rem 1rem;
+		}
+	}
 }
 
-.jumbotron {
-  border-radius: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin: 0 !important;
-  div {
-    div {
-      div {
-        font-family: $codefont;
-        h1 {
-          font-size: 1.8em;
-          font-weight: normal;
-          padding-bottom: 0.5rem;
-        }
-        h2 {
-          font-size: 1.3em;
-          font-weight: lighter;
-          padding-bottom: 0.4rem;
-        }
-      }
-    }
-  }
+#email-contact {
+	position: absolute;
+	top: 0.5rem;
+	left: 1rem;
+	color: #cccccc;
+	font-size: 0.8rem;
 }
 
-.jumbotronNavigationButton {
-  border-radius: 0.2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  &:hover {
-    background-color: $buttonhoverbackgroundcolour !important;
-  }
-}
-
-#titleCursor {
-  position: absolute;
+#title-cursor {
+	position: absolute;
 }
 
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
-.subheadingFade {
-  animation: 3s fade-in forwards;
+.subheading-fade {
+	animation: 3s fade-in forwards;
 }

@@ -8,7 +8,7 @@ type CertificateProps = {
 }
 
 const CertificateSummary = ({ certName, certLink }: CertificateProps) => (
-	<li className="my-2 certificateListItem d-flex justify-content-center">
+	<li className="my-2 certificate-list-item d-flex justify-content-center">
 		<a
 			href={certLink}
 			target="_blank"

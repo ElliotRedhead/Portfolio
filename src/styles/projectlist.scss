@@ -1,38 +1,46 @@
+@use "variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
-@import "./global.scss";
 
-#projectList {
+#project-list {
 	font-family: "Amatic SC", cursive;
-}
-
-.projectName {
-	font-size: 2.7rem;
-	@media (min-width: 768px) {
-		font-size: 1.25rem;
-	}
-}
-
-.projectShortDescription {
-	height: 2.8rem;
-}
-
-.iconsContainer {
-	height: 7rem;
-	@media (min-width: 425px) and (max-width: 768px) {
-		height: 10rem;
-	}
-	img {
-		max-height: 3rem;
+	.row {
+		div {
+			div {
+				.project-name {
+					max-height: 20%;
+				}
+				.project-short-description {
+					max-height: 25%;
+					padding: 0.2rem 0.5rem;
+					overflow: auto;
+				}
+				.icons-container {
+					overflow: auto;
+					max-height: 45%;
+					.tech-icon {
+						padding: 0.25rem;
+						object-fit: contain;
+						flex-basis: 2.5rem;
+						max-height: 2.5rem;
+						resize: vertical;
+					}
+				}
+				div {
+					a {
+						max-height: 10%;
+						.project-link-button {
+							width: 100%;
+							&:hover {
+								background-color: v.$buttonhoverbackgroundcolour;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
 .__react_component_tooltip {
 	font-size: 1.25rem !important;
-}
-
-.projectLinkButton {
-	width: 100%;
-	&:hover {
-		background-color: $buttonhoverbackgroundcolour;
-	}
 }
