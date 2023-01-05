@@ -1,5 +1,5 @@
-import React from "react";
-import ReactTooltip from "react-tooltip";
+import { Fragment } from "react";
+import { Tooltip } from "react-tooltip";
 
 type ProjectSummaryProps = {
 	projectName: string,
@@ -9,7 +9,7 @@ type ProjectSummaryProps = {
 	liveLink: string
 }
 
-const ProjectSummary = ({ projectName, shortDesc, technologies, repoLink, liveLink }:ProjectSummaryProps) => { 
+const ProjectSummary = ({ projectName, shortDesc, technologies, repoLink, liveLink }:ProjectSummaryProps) => {
 
 	const technologyIcons = technologies.map(technology => {
 		const slugify = (technology:string) => {
@@ -19,15 +19,19 @@ const ProjectSummary = ({ projectName, shortDesc, technologies, repoLink, liveLi
 		const techImageSource = `/images/techicons/${slugify(technology)}.svg`;
 		const techImageAltText = `${technology} icon.`;
 		return (
-			<React.Fragment key={technology}>
-				<ReactTooltip />
+			<Fragment key={technology}>
+				<Tooltip
+					anchorId={`${projectName}-${technology}`}
+					content={technology}
+					place="top" />
 				<img 
-					data-tip={technology}
+					id={`${projectName}-${technology}`} 
+					data-tooltip-content={technology}
 					src={techImageSource}
 					className="tech-icon d-flex"
 					key={technology}
 					alt={techImageAltText} />
-			</React.Fragment>
+			</Fragment>
 		);
 	});
 

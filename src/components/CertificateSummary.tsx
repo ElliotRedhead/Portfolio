@@ -1,5 +1,3 @@
-import React from "react";
-
 type CertificateProps = {
 	id?: number,
 	certName: string,

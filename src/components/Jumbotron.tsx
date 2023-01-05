@@ -1,4 +1,3 @@
-import React from "react";
 import LinkingNodes from "./LinkingNodes";
 import JumbotronHeading from "./JumbotronHeading";
 import "./../styles/jumbotron.scss";

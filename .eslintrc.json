@@ -72,6 +72,8 @@
 	],
 	"space-before-function-paren": [1, "always"],
 	// React/JSX specific rules
+	"react/jsx-uses-react": "off",
+	"react/react-in-jsx-scope": "off",
 	"react/jsx-boolean-value": [1, "always"],
 	"react/jsx-closing-tag-location": 1,
 	"react/jsx-closing-bracket-location": [1, "after-props"],

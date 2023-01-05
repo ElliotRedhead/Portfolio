@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const PageNotFound404 = () => (
@@ -7,11 +6,11 @@ const PageNotFound404 = () => (
 			It seems we&apos;re lost in the ether!
 		</h1>
 		<h2>
-			<Link to="/home">
+			<Link to="/">
 				Back to safety!
 			</Link>
 		</h2>
 	</>
 );
 
-export default PageNotFound404;
+export { PageNotFound404 };
